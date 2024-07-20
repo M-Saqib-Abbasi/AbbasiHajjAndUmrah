@@ -30,26 +30,7 @@
         $(window).resize(toggleNavbarMethod);
 
         
-        document.getElementById('whatsapp-button').addEventListener('click', function() {
-            var phoneNumber = '+923073044150'; // Replace with your phone number
-            var message = 'Hello!'; // Replace with your default message
-        
-            var whatsappWebUrl = 'https://web.whatsapp.com/send?phone=' + phoneNumber + '&text=' + encodeURIComponent(message);
-            var whatsappAppUrl = 'whatsapp://send?phone=' + phoneNumber + '&text=' + encodeURIComponent(message);
-        
-            // Try to open WhatsApp Web
-            var win = window.open(whatsappWebUrl, '_blank');
-            
-            // Fallback to open WhatsApp App if WhatsApp Web doesn't open
-            setTimeout(function() {
-                if (!win || win.closed || typeof win.closed == 'undefined') {
-                    window.location.href = whatsappAppUrl;
-                }
-            }, 500); // Adjust the timeout as needed
-        });
-        
-
-    });
+   
     
     
     // Back to top button
