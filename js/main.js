@@ -30,7 +30,10 @@
         $(window).resize(toggleNavbarMethod);
 
         
-   
+       
+        
+
+    });
     
     
     // Back to top button
