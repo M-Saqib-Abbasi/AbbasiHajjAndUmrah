@@ -1,0 +1,103 @@
+(function ($) {
+    "use strict";
+    $('.destination-item').click(function(){
+        debugger
+        $(this).find('a').attr('data-toggle','modal');
+        $(this).find('a').attr('data-target','#myModal');
+        var HeaderText = $(this).find('h5').text();
+        
+        console.log(HeaderText);
+        $('#myModal').find('h4').text(HeaderText)
+        console.log($('#myModal').find('h4').text());
+    })
+
+
+    
+    // Dropdown on mouse hover
+    $(document).ready(function () {
+        function toggleNavbarMethod() {
+            if ($(window).width() > 992) {
+                $('.navbar .dropdown').on('mouseover', function () {
+                    $('.dropdown-toggle', this).trigger('click');
+                }).on('mouseout', function () {
+                    $('.dropdown-toggle', this).trigger('click').blur();
+                });
+            } else {
+                $('.navbar .dropdown').off('mouseover').off('mouseout');
+            }
+        }
+        toggleNavbarMethod();
+        $(window).resize(toggleNavbarMethod);
+
+        
+        document.getElementById('whatsapp-button').addEventListener('click', function() {
+            var phoneNumber = '+923073044150'; // Replace with your phone number
+            var message = 'Hello!'; // Replace with your default message
+        
+            var whatsappWebUrl = 'https://web.whatsapp.com/send?phone=' + phoneNumber + '&text=' + encodeURIComponent(message);
+            var whatsappAppUrl = 'whatsapp://send?phone=' + phoneNumber + '&text=' + encodeURIComponent(message);
+        
+            // Try to open WhatsApp Web
+            var win = window.open(whatsappWebUrl, '_blank');
+            
+            // Fallback to open WhatsApp App if WhatsApp Web doesn't open
+            setTimeout(function() {
+                if (!win || win.closed || typeof win.closed == 'undefined') {
+                    window.location.href = whatsappAppUrl;
+                }
+            }, 500); // Adjust the timeout as needed
+        });
+        
+
+    });
+    
+    
+    // Back to top button
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.back-to-top').fadeIn('slow');
+        } else {
+            $('.back-to-top').fadeOut('slow');
+        }
+    });
+    $('.back-to-top').click(function () {
+        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        return false;
+    });
+
+
+    // Date and time picker
+    $('.date').datetimepicker({
+        format: 'L'
+    });
+    $('.time').datetimepicker({
+        format: 'LT'
+    });
+
+
+    // Testimonials carousel
+    $(".testimonial-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1500,
+        margin: 30,
+        dots: true,
+        loop: true,
+        center: true,
+        responsive: {
+            0:{
+                items:1
+            },
+            576:{
+                items:1
+            },
+            768:{
+                items:2
+            },
+            992:{
+                items:3
+            }
+        }
+    });
+    
+})(jQuery);
+
