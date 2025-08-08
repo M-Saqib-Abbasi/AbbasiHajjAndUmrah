@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <title>Abbasi Hajj & Umrah Company (PVT) Ltd.</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    
+    <link rel="icon" type="image/JPG" href="img/abbasilogo-removebg-preview.png">
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
 
-    <link href="css/googleFonts.css" rel="stylesheet"> 
+    <link href="css/googleFonts.css" rel="stylesheet">
 
     <!-- Font Awesome -->
 
@@ -23,70 +23,76 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    
+
     <script src="js/GoogleAPIS.min.js"></script>
     <style>
         .map-responsive {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    background: #000;
-}
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
 
-.map-responsive iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
+        .map-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* WhatsApp Floating Button Styles */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            left: 40px;
+            /* Changed from right to left */
+            background-color: #25d366;
+            color: #fff;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 1000;
+        }
+
+        .whatsapp-float img.whatsapp-icon {
+            width: 40px;
+            height: 40px;
+            margin-top: 10px;
+        }
+        .team-img img {
+    height: 300px; /* jo height Atif wali pic ki hai wo yahan set karo */
     width: 100%;
-    height: 100%;
+    object-fit: cover; /* crop & fit image proportionally */
 }
 
-/* WhatsApp Floating Button Styles */
-.whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    left: 40px; /* Changed from right to left */
-    background-color: #25d366;
-    color: #fff;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 1000;
-}
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16833689561"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-.whatsapp-float img.whatsapp-icon {
-    width: 40px;
-    height: 40px;
-    margin-top: 10px;
-}
-
-
-    </style> 
-     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16833689561"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-16833689561');
-</script>
-<!-- Event snippet for Contact conversion page -->
-<script>
-    gtag('event', 'conversion', {'send_to': 'AW-16833689561/PuH2CM2C0JIaENnv9to-'});
-  </script>
+        gtag('config', 'AW-16833689561');
+    </script>
+    <!-- Event snippet for Contact conversion page -->
+    <script>
+        gtag('event', 'conversion', { 'send_to': 'AW-16833689561/PuH2CM2C0JIaENnv9to-' });
+    </script>
 
 </head>
 
 <body>
-    
+
     <!-- Topbar Start -->
-    <div class="container-fluid bg-light pt-3 d-none d-lg-block" >
+    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
@@ -98,7 +104,8 @@
                 </div>
                 <div class="col-lg-6 text-center text-lg-right">
                     <div class="d-inline-flex align-items-center">
-                        <a class="text-primary px-3" target="_blank" href="https://www.facebook.com/AbbasiHajjAndUmrahCompany/">
+                        <a class="text-primary px-3" target="_blank"
+                            href="https://www.facebook.com/AbbasiHajjAndUmrahCompany/">
                             <i class="fab fa-facebook-f"></i>
                         </a>
                         <!-- <a class="text-primary px-3" href="">
@@ -107,7 +114,8 @@
                         <!-- <a class="text-primary px-3" href="">
                             <i class="fab fa-linkedin-in"></i>
                         </a> -->
-                        <a class="text-primary px-3" target="_blank" href="https://www.instagram.com/abbasihajjandumrahcompany?igsh=MWJidmJxd24yMThhNA==">
+                        <a class="text-primary px-3" target="_blank"
+                            href="https://www.instagram.com/abbasihajjandumrahcompany?igsh=MWJidmJxd24yMThhNA==">
                             <i class="fab fa-instagram"></i>
                         </a>
                         <a class="text-primary pl-3" target="_blank" href="https://www.youtube.com/@abbasihajjumrah">
@@ -120,16 +128,19 @@
     </div>
     <!-- Topbar End -->
 
-
     <!-- Navbar Start -->
-    <div class=" navbar sticky-top   nav-bar p-0 " >
+    <div class=" navbar sticky-top   nav-bar p-0 ">
         <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
-            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5" style="width:100%">
-                
+            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5"
+                style="width:100%">
+
+                <img src="img/abbasilogo-removebg-preview.png" alt="Abbasi Logo" style="height: 50px;">
+
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
+
+
                 <div class="shadow  rounded" style="color: white;background-color: #7ab730;font-size: 21px;">
                     Abbasi Hajj & Umrah Company (PVT) Ltd.
                 </div>
@@ -139,7 +150,8 @@
                         <a href="#about" class="nav-item nav-link">About</a>
                         <a href="#services" class="nav-item nav-link">Services</a>
                         <a href="#ziarat" class="nav-item nav-link">Ziarat</a>
-                        
+<a href="#group-of-companies" class="nav-item nav-link">Group of Companies</a>
+
                         <a href="#contact" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
@@ -147,7 +159,7 @@
         </div>
     </div>
     <!-- Navbar End -->
-    
+
     <!-- Carousel Start -->
     <div class="container-fluid p-0" id="index">
         <div id="header-carousel" class="carousel slide" data-ride="carousel">
@@ -188,7 +200,7 @@
     <!-- Carousel End -->
 
 
-    
+
 
 
     <!-- About Start -->
@@ -203,16 +215,32 @@
                 <div class="col-lg-6 pt-5 pb-lg-5">
                     <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
                         <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">About Us</h6>
-                        <h1 class="mb-3">We Provide Best Tour Packages In Your Budget</h1>
+                        <h1 class="mb-3">Trusted Hajj & Umrah Services — Affordable, Reliable, Spiritual</h1>
                         <p>
-                            Embark on a spiritual journey with us. We offer meticulously planned and affordable Hajj and Umrah packages tailored to meet your needs. Our dedicated team ensures that every aspect of your pilgrimage is handled with the utmost care and attention. Experience the peace and fulfillment of this sacred journey, knowing that all your travel arrangements are in expert hands.
+                            Welcome to <strong>Abbasi Hajj and Umrah Company</strong>, your trusted partner for
+                            spiritually enriching, affordable, and well-organized Hajj and Umrah journeys. With years of
+                            experience and thousands of satisfied pilgrims, we are proud to be among Pakistan’s leading
+                            travel service providers for the holy cities of <strong>Makkah</strong> and
+                            <strong>Madinah</strong>.
                         </p>
                         <p>
-                            Whether you are visiting the holy cities of Makkah and Madinah for the first time or returning to continue your spiritual journey, our packages provide the perfect balance of comfort, convenience, and cost-effectiveness. Join thousands of satisfied pilgrims who have trusted us to make their Hajj and Umrah experiences truly memorable.
+                            Our carefully curated <strong>Hajj and Umrah packages</strong> are designed to offer maximum
+                            comfort, peace of mind, and spiritual fulfillment — all within your budget. From visa
+                            processing and ticket booking to hotel arrangements near the Haramain Sharifain, our expert
+                            team handles every detail with care and professionalism.
                         </p>
                         <p>
-                            Explore the divine beauty of the Kaaba in Makkah and the serene tranquility of the Prophet's Mosque in Madinah with our comprehensive tour packages. Let us be your guide on this spiritual quest. 
+                            Whether you’re performing Hajj for the first time or planning your return to the blessed
+                            land, we ensure a seamless and spiritually uplifting experience. Our packages are
+                            Shariah-compliant, customizable, and suitable for families, groups, and individual
+                            travelers.
                         </p>
+                        <p>
+                            Join the thousands who trust Abbasi Hajj and Umrah Company for their sacred journey. Let us
+                            serve you with excellence, sincerity, and a commitment to making your pilgrimage truly
+                            unforgettable.
+                        </p>
+
                         <div class="row mb-4">
                             <div class="col-6">
                                 <img class="img-fluid" src="img/about-1.jpg" alt="">
@@ -221,7 +249,7 @@
                                 <img class="img-fluid" src="img/about-2.jpg" alt="">
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -236,34 +264,37 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="d-flex mb-4 mb-lg-0">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3" style="height: 100px; width: 100px;">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3"
+                            style="height: 100px; width: 100px;">
                             <i class="fa fa-2x fa-money-check-alt text-white"></i>
                         </div>
                         <div class="d-flex flex-column">
                             <h5 class="">Competitive Pricing</h5>
-                            <p class="m-0">Experience top-quality travel packages at competitive prices.</p>
+                            <p class="m-0"> Premium <strong>Hajj & Umrah packages</strong> at fair, transparent rates — no hidden charges.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="d-flex mb-4 mb-lg-0">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3" style="height: 100px; width: 100px;">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3"
+                            style="height: 100px; width: 100px;">
                             <i class="fa fa-2x fa-award text-white"></i>
                         </div>
                         <div class="d-flex flex-column">
                             <h5 class="">Best Services</h5>
-                            <p class="m-0">Experience the best services for a seamless and memorable journey.</p>
+                            <p class="m-0">  From <strong>visa help</strong> to comfy stays near Haramain — we handle it all.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="d-flex mb-4 mb-lg-0">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3" style="height: 100px; width: 100px;">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3"
+                            style="height: 100px; width: 100px;">
                             <i class="fa fa-2x fa-globe text-white"></i>
                         </div>
                         <div class="d-flex flex-column">
                             <h5 class="">Worldwide Coverage</h5>
-                            <p class="m-0">Enjoy peace of mind with our worldwide travel coverage.</p>
+                            <p class="m-0">Serving pilgrims <strong>across Pakistan & beyond</strong> with trusted global support.</p>
                         </div>
                     </div>
                 </div>
@@ -340,7 +371,7 @@
     </div>
     <!-- Destination Start -->
     <!-- Modal -->
-  <!-- <div class="modal fade" id="myModal" role="dialog">
+    <!-- <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
@@ -394,7 +425,73 @@
     </div>
   </div> -->
 
- <!-- Modal End-->
+    <!-- Modal End-->
+
+    <!-- Group of Companies Start -->
+     <section id="group-of-companies"></section>
+<div class="container-fluid" id="group-companies">
+    <div class="container pt-5 pb-3">
+        <div class="text-center mb-3 pb-3">
+            <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Our Group</h6>
+            <h1>Abbasi Group of Companies</h1>
+            
+    
+    
+
+
+            <p class="text-muted">Proudly serving with excellence across travel, consultancy, and global services.</p>
+        </div>
+        <div class="row">
+
+            <!-- Parent Company -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="destination-item position-relative overflow-hidden mb-2">
+                    <img class="img-fluid" src="img/madina2.webp" alt="Abbasi Hajj & Umrah" style="height:250px; width:100%; object-fit:cover;">
+                    <a class="destination-overlay text-white text-decoration-none" href="#">
+                        <h5 class="text-warning">Abbasi Hajj & Umrah Company pvt ltd</h5>
+                        <span>Parent Company</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Dream World International -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="destination-item position-relative overflow-hidden mb-2">
+                    <img class="img-fluid" src="img/multi.webp" alt="Dream World International" style="height:250px; width:100%; object-fit:cover;">
+                    <a class="destination-overlay text-white text-decoration-none" href="#">
+                        <h5 class="text-white">Dream World International</h5>
+                        <span>Travel & Tours</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Rehmani Group -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="destination-item position-relative overflow-hidden mb-2">
+                    <img class="img-fluid" src="img/Khana-e-Kaaba-hajj-1024.jpg" alt="Rehmani Group" style="height:250px; width:100%; object-fit:cover;">
+                    <a class="destination-overlay text-white text-decoration-none" href="#">
+                        <h5 class="text-white">Rehmani travel & tours</h5>
+                        <span>Business Solutions</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Abbasi Consultants -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="destination-item position-relative overflow-hidden mb-2">
+                    <img class="img-fluid" src="img/malaysia.jpg" alt="Abbasi Consultants" style="height:250px; width:100%; object-fit:cover;">
+                    <a class="destination-overlay text-white text-decoration-none" href="#">
+                        <h5 class="text-white">Abbasi Consultants</h5>
+                        <span>Visa & Immigration</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Group of Companies End -->
+
 
     <!-- Service Start -->
     <div class="container-fluid " id="services">
@@ -408,21 +505,24 @@
                     <div class="service-item bg-white text-center mb-2 py-5 px-4">
                         <i class="fa fa-2x fa-route mx-auto mb-4"></i>
                         <h5 class="mb-2">Travel Guide</h5>
-                        <p class="m-0">Your go-to guide for tips, recommendations, and insights on your next adventure.</p>
+                        <p class="m-0">Your go-to guide for tips, recommendations, and insights on your next adventure.
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="service-item bg-white text-center mb-2 py-5 px-4">
                         <i class="fa fa-2x fa-ticket-alt mx-auto mb-4"></i>
                         <h5 class="mb-2">Ticket Booking</h5>
-                        <p class="m-0">Streamline your travel plans with our easy and efficient ticket booking process.</p>
+                        <p class="m-0">Streamline your travel plans with our easy and efficient ticket booking process.
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="service-item bg-white text-center mb-2 py-5 px-4">
                         <i class="fa fa-2x fa-hotel mx-auto mb-4"></i>
                         <h5 class="mb-2">Hotel Booking</h5>
-                        <p class="m-0">Effortlessly book your ideal hotel with our user-friendly system and enjoy a smooth, hassle-free experience.</p>
+                        <p class="m-0">Effortlessly book your ideal hotel with our user-friendly system and enjoy a
+                            smooth, hassle-free experience.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -432,7 +532,8 @@
 
                         </i>
                         <h5 class="mb-2">Visa</h5>
-                        <p class="m-0">Secure your visa with ease using our streamlined application process, and get expert assistance every step of the way.</p>
+                        <p class="m-0">Secure your visa with ease using our streamlined application process, and get
+                            expert assistance every step of the way.</p>
                     </div>
                 </div>
             </div>
@@ -454,14 +555,16 @@
                         <img class="img-fluid" src="img/package-1.jpg" alt="">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
+                                <small class="m-0"><i
+                                        class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
                                 <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
                                 <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
                             </div>
                             <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small>
+                                    </h6>
                                     <h5 class="m-0">$350</h5>
                                 </div>
                             </div>
@@ -473,14 +576,16 @@
                         <img class="img-fluid" src="img/package-1.jpg" alt="">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
+                                <small class="m-0"><i
+                                        class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
                                 <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
                                 <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
                             </div>
                             <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small>
+                                    </h6>
                                     <h5 class="m-0">$350</h5>
                                 </div>
                             </div>
@@ -492,14 +597,16 @@
                         <img class="img-fluid" src="img/package-1.jpg" alt="">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
+                                <small class="m-0"><i
+                                        class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
                                 <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
                                 <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
                             </div>
                             <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small>
+                                    </h6>
                                     <h5 class="m-0">$350</h5>
                                 </div>
                             </div>
@@ -511,14 +618,16 @@
                         <img class="img-fluid" src="img/package-1.jpg" alt="">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
+                                <small class="m-0"><i
+                                        class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
                                 <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
                                 <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
                             </div>
                             <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small>
+                                    </h6>
                                     <h5 class="m-0">$350</h5>
                                 </div>
                             </div>
@@ -530,14 +639,16 @@
                         <img class="img-fluid" src="img/package-1.jpg" alt="">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
+                                <small class="m-0"><i
+                                        class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
                                 <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
                                 <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
                             </div>
                             <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small>
+                                    </h6>
                                     <h5 class="m-0">$350</h5>
                                 </div>
                             </div>
@@ -549,14 +660,16 @@
                         <img class="img-fluid" src="img/package-1.jpg" alt="">
                         <div class="p-4">
                             <div class="d-flex justify-content-between mb-3">
-                                <small class="m-0"><i class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
+                                <small class="m-0"><i
+                                        class="fa fa-map-marker-alt text-primary mr-2"></i>Thailand</small>
                                 <small class="m-0"><i class="fa fa-calendar-alt text-primary mr-2"></i>3 days</small>
                                 <small class="m-0"><i class="fa fa-user text-primary mr-2"></i>2 Person</small>
                             </div>
                             <a class="h5 text-decoration-none" href="">Discover amazing places of the world with us</a>
                             <div class="border-top mt-4 pt-4">
                                 <div class="d-flex justify-content-between">
-                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small></h6>
+                                    <h6 class="m-0"><i class="fa fa-star text-primary mr-2"></i>4.5 <small>(250)</small>
+                                    </h6>
                                     <h5 class="m-0">$350</h5>
                                 </div>
                             </div>
@@ -569,7 +682,7 @@
     <!-- Packages End -->
 
 
-    
+
 
 
     <!-- Team Start -->
@@ -617,7 +730,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
                     <div class="team-item bg-white mb-4">
                         <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/M Shaheer Abbasi.jpeg" alt="">
+                            <img class="img-fluid w-100" src="img/team-4.jpg" alt="">
                             <!-- <div class="team-social">
                                 <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
@@ -634,7 +747,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
                     <div class="team-item bg-white mb-4">
                         <div class="team-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/Zain ul Abidin Abbasi.jpeg" alt="">
+                            <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
                             <!-- <div class="team-social">
                                 <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-facebook-f"></i></a>
@@ -665,37 +778,41 @@
                 <div class="text-center pb-4">
                     <!-- <img class="img-fluid mx-auto" src="img/testimonial-1.jpg" style="width: 100px; height: 100px;" > -->
                     <div class="testimonial-text bg-white p-4 mt-n5">
-                        <p class="mt-5">This is the best place for traveling anywhere in the world. Enjoy expert advice from top-notch consultants and a seamless planning experience.
+                        <p class="mt-5">This is the best place for traveling anywhere in the world. Enjoy expert advice
+                            from top-notch consultants and a seamless planning experience.
                         </p>
                         <h5 class="text-truncate">Muhammad Riaz</h5>
-                        
+
                     </div>
                 </div>
                 <div class="text-center">
                     <!-- <img class="img-fluid mx-auto" src="img/testimonial-2.jpg" style="width: 100px; height: 100px;" > -->
                     <div class="testimonial-text bg-white p-4 mt-n5">
-                        <p class="mt-5">Most experienced and reliable agency available in town, trusted people providing best services, always recommended 👍
+                        <p class="mt-5">Most experienced and reliable agency available in town, trusted people providing
+                            best services, always recommended 👍
                         </p>
                         <h5 class="text-truncate">Ubaid Ur Rehman</h5>
-                        
+
                     </div>
                 </div>
                 <div class="text-center">
                     <!-- <img class="img-fluid mx-auto" src="img/testimonial-3.jpg" style="width: 100px; height: 100px;" > -->
                     <div class="testimonial-text bg-white p-4 mt-n5">
-                        <p class="mt-5">Abbasi Sahib has served Hajj clients for 30 years with integrity. Highly recommended for Hajj & Umrah Services.
+                        <p class="mt-5">Abbasi Sahib has served Hajj clients for 30 years with integrity. Highly
+                            recommended for Hajj & Umrah Services.
                         </p>
                         <h5 class="text-truncate">Ahmed Kashif</h5>
-                        
+
                     </div>
                 </div>
                 <div class="text-center">
                     <!-- <img class="img-fluid mx-auto" src="img/testimonial-4.jpg" style="width: 100px; height: 100px;" > -->
                     <div class="testimonial-text bg-white p-4 mt-n5">
-                        <p class="mt-5">Excellent service and reasonable prices. They quickly tailored a package. Seamless travel experience with childrens. Highly recommended.
+                        <p class="mt-5">Excellent service and reasonable prices. They quickly tailored a package.
+                            Seamless travel experience with childrens. Highly recommended.
                         </p>
                         <h5 class="text-truncate">M Umair Aslam</h5>
-                        
+
                     </div>
                 </div>
             </div>
@@ -773,83 +890,84 @@
         </div>
     </div> -->
     <!-- Blog End -->
-<!-- Contact Start -->
-<div class="container-fluid " id="contact">
-    <div class="container py-5">
-       
-        <div class="row justify-content-center ">
-            
-            <div class="col-8">
-                <div class=" mb-3 pb-3">
-                    
-                    <h3>Get in Touch!</h3>
-                </div>
-                <div class="contact-form bg-white" style="padding: 30px;">
-                    <div id="success"></div>
-                    <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                        <div class="form-row">
-                            <div class="control-group col-sm-6">
-                                <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
-                                    required="required" data-validation-required-message="Please enter your name" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group col-sm-6">
-                                <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
-                                    required="required" data-validation-required-message="Please enter your email" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
-                                required="required" data-validation-required-message="Please enter a subject" />
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="control-group">
-                            <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
-                                required="required"
-                                data-validation-required-message="Please enter your message"></textarea>
-                            <p class="help-block text-danger"></p>
-                        </div>
-                        <div class="text-center">
-                            <button class="btn btn-primary py-3 px-4" type="submit" id="sendMessageButton">Send Message</button>
-                        </div>
-                    </form>
-                </div>
-                
-            </div>
-           
-                
-            
-        </div>
-        
-    </div>
-</div>
-<!-- Contact End -->
-<!---Location Start-->
-<div class="container-fluid " style="display: none;">
-    <div class="container py-5">
+    <!-- Contact Start -->
+    <div class="container-fluid " id="contact">
+        <div class="container py-5">
 
-        <div class="row justify-content-center ">
+            <div class="row justify-content-center ">
 
-            <div class="col-8">
-                <div class="col-8 ">
+                <div class="col-8">
                     <div class=" mb-3 pb-3">
 
-                        <h4>We'd love to meet with you!</h4>
-
+                        <h3>Get in Touch!</h3>
                     </div>
-                    <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1LvyKTyCqTdZKqrtnBx_YAhGK-Vs78B0&ehbc=2E312F" width="610" height="420"></iframe> -->
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d888.186603746724!2d68.37781942920122!3d25.392371410531837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c715757fe9c6d%3A0x466b2555e5a305fd!2sABBASI%20HAJJ%20%26%20UMRAH%20COMPANY%20(PVT)%20LTD!5e1!3m2!1sen!2s!4v1675769034226!5m2!1sen!2s"
-                       width="auto"
-                        height="220" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="contact-form bg-white" style="padding: 30px;">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <div class="form-row">
+                                <div class="control-group col-sm-6">
+                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
+                                        required="required" data-validation-required-message="Please enter your name" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-sm-6">
+                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
+                                        required="required"
+                                        data-validation-required-message="Please enter your email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
+                                    required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+                                    required="required"
+                                    data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-primary py-3 px-4" type="submit" id="sendMessageButton">Send
+                                    Message</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+    <!-- Contact End -->
+    <!---Location Start-->
+    <div class="container-fluid " style="display: none;">
+        <div class="container py-5">
+
+            <div class="row justify-content-center ">
+
+                <div class="col-8">
+                    <div class="col-8 ">
+                        <div class=" mb-3 pb-3">
+
+                            <h4>We'd love to meet with you!</h4>
+
+                        </div>
+                        <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1LvyKTyCqTdZKqrtnBx_YAhGK-Vs78B0&ehbc=2E312F" width="610" height="420"></iframe> -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d888.186603746724!2d68.37781942920122!3d25.392371410531837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c715757fe9c6d%3A0x466b2555e5a305fd!2sABBASI%20HAJJ%20%26%20UMRAH%20COMPANY%20(PVT)%20LTD!5e1!3m2!1sen!2s!4v1675769034226!5m2!1sen!2s"
+                            width="auto" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!---Location End-->
+    <!---Location End-->
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top:90px;">
         <div class="row pt-5">
@@ -861,10 +979,14 @@
                 <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
                 <div class="d-flex justify-content-start">
                     <!-- <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a> -->
-                    <a class="btn btn-outline-primary btn-square mr-2" target="_blank" href="https://www.facebook.com/AbbasiHajjAndUmrahCompany/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" target="_blank"
+                        href="https://www.facebook.com/AbbasiHajjAndUmrahCompany/"><i class="fab fa-facebook-f"></i></a>
                     <!-- <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a> -->
-                    <a class="btn btn-outline-primary btn-square  mr-2" target="_blank" href="https://www.instagram.com/abbasihajjandumrahcompany?igsh=MWJidmJxd24yMThhNA=="><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-outline-primary btn-square" target="_blank" href="https://www.youtube.com/@abbasihajjumrah"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-primary btn-square  mr-2" target="_blank"
+                        href="https://www.instagram.com/abbasihajjandumrahcompany?igsh=MWJidmJxd24yMThhNA=="><i
+                            class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-primary btn-square" target="_blank"
+                        href="https://www.youtube.com/@abbasihajjumrah"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
@@ -875,7 +997,8 @@
                     <a class="text-white-50 mb-2" href="#services"><i class="fa fa-angle-right mr-2"></i>Services</a>
                     <!-- <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a> -->
 
-                    <a class="text-white-50 mb-2" href="#testimonal"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
+                    <a class="text-white-50 mb-2" href="#testimonal"><i
+                            class="fa fa-angle-right mr-2"></i>Testimonial</a>
                 </div>
             </div>
             <!-- <div class="col-lg-3 col-md-6 mb-5">
@@ -890,16 +1013,18 @@
                    
                 </div>
             </div> -->
-          
+
             <div class="col-lg-3 col-md-6 mb-5">
                 <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contact Us</h5>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>Suit: G-722,724, Gulshah Road, Pinjra Pool Chowk, Hyderabad Sindh, Pakistan.</p>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Suit: G-722,724, Gulshah Road, Pinjra Pool Chowk, Hyderabad
+                    Sindh, Pakistan.</p>
                 <p><i class="fa fa-phone-alt mr-2"></i>+92 307 3044150</p>
                 <p><i class="fa fa-envelope mr-2"></i>abbasi.hajjumrah@gmail.com</p>
                 <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
                 <div class="w-100">
                     <div class="input-group">
-                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
+                        <input type="text" class="form-control border-light" style="padding: 25px;"
+                            placeholder="Your Email">
                         <div class="input-group-append">
                             <button class="btn btn-primary px-3">Sign Up</button>
                         </div>
@@ -911,29 +1036,30 @@
                 <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1LvyKTyCqTdZKqrtnBx_YAhGK-Vs78B0&ehbc=2E312F" width="610" height="420"></iframe> -->
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d888.186603746724!2d68.37781942920122!3d25.392371410531837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c715757fe9c6d%3A0x466b2555e5a305fd!2sABBASI%20HAJJ%20%26%20UMRAH%20COMPANY%20(PVT)%20LTD!5e1!3m2!1sen!2s!4v1675769034226!5m2!1sen!2s"
-                   width="auto"
-                    height="220" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="auto" height="220" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
-      
+
             </div>
         </div>
     </div>
-    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5"
+        style="border-color: rgba(256, 256, 256, .1) !important;">
         <div class="row">
             <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white-50">Copyright &copy; <a href="#">Abbasi Hajj & Umrah</a>. All Rights Reserved.</a>
+                <p class="m-0 text-white-50">Copyright &copy; <a href="#">Abbasi Hajj & Umrah</a>. All Rights
+                    Reserved.</a>
                 </p>
             </div>
-            
+
         </div>
     </div>
-    
 
-      <!-- WhatsApp Floating Button -->
-      <a href="https://wa.me/+923073044150" class="whatsapp-float" target="_blank">
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/+923073044150" class="whatsapp-float" target="_blank">
         <img src="img/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
     </a>
-      <!-- <a href="#" class="whatsapp-float" id="whatsapp-button">
+    <!-- <a href="#" class="whatsapp-float" id="whatsapp-button">
         <img src="img/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
     </a> -->
     <!-- Footer End -->
@@ -959,40 +1085,40 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script>
-        
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
 
 
-</script>
-    
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+
+
+    </script>
+
 </body>
 
 </html>
